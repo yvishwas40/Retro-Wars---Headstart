@@ -13,7 +13,7 @@ const GameGrid: React.FC<GameGridProps> = ({ games, gamesRef }) => {
       {games.map((game) => (
         <a
           key={game.id}
-          href={game.link}
+          // href={game.link}
           target="_blank"
           rel="noopener noreferrer"
           className="group relative"
@@ -28,7 +28,7 @@ const GameGrid: React.FC<GameGridProps> = ({ games, gamesRef }) => {
               />
             </div>
             <span className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 font-bold group-hover:scale-105 transition-transform duration-300">{game.name}</span>
-            <ExternalLink className="w-5 h-5 text-white/50 mt-2 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
+            {/* <ExternalLink className="w-5 h-5 text-white/50 mt-2 group-hover:text-white group-hover:scale-110 transition-all duration-300" /> */}
           </div>
         </a>
       ))}
